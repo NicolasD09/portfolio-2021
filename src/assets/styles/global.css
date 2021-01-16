@@ -1,0 +1,225 @@
+/* Reset */
+html {
+  color: #333;
+  background-color: #fdfdfd;
+  font-size: 16px;
+  font-family: "Sf Pro Regular", Arial, Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+/* Main container */
+
+.main__container {
+  max-width: calc((100% - 200px) - (100% / 12) * 2);
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.language-switch__container {
+  right: 1.5rem;
+  top: 1.5rem;
+  z-index: 999;
+}
+
+.language-switch__item img {
+  height: 35px;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.25));
+}
+
+.language-switch__item.disabled img {
+  filter: grayscale(70%);
+  opacity: 0.5;
+}
+
+.navbar__logo__img {
+  min-width: 125px;
+}
+
+.navbar__links__container li {
+  margin: 0 45px;
+}
+
+.navbar__links__container li:last-child {
+  margin-right: 0;
+}
+
+.navbar__link.active {
+  padding-bottom: 12px;
+}
+
+.navbar__link.active::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #7b61ff;
+  animation: bounce 300ms cubic-bezier(0.63, -0.01, 0.49, 1.6);
+}
+
+@keyframes bounce {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero__container {
+  height: 100vh;
+}
+
+.hero__container a {
+  margin-top: 34px;
+}
+
+.hero__bg {
+  max-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: -2;
+  opacity: 0.2;
+}
+
+.hero__bg__img {
+  position: relative;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  height: auto;
+}
+
+.hero__title {
+  margin-top: 10%;
+  width: fit-content;
+}
+
+.hero__chevron__icon {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 7px 2px rgba(0, 0, 0, 0.3));
+  transition: 200ms ease-in-out;
+}
+
+.hero__chevron__icon:hover{
+  transform: translateX(-50%) translateY(3px);
+}
+
+.back-to-top__icon {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  filter: drop-shadow(0 7px 2px rgba(0, 0, 0, 0.3));
+  z-index: 999;
+  transition: 200ms ease-in-out;
+}
+
+.back-to-top__icon:hover {
+  transform: translateY(-4px);
+}
+
+.projects__container {
+  height: 100vh;
+  position: relative;
+}
+
+.projects__items__container {
+  min-height: 70%;
+  max-height: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 2px solid #7b61ff;
+  border-bottom: 2px solid #7b61ff;
+  overflow: auto;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.projects__items__container::-webkit-scrollbar {
+  display: none;
+}
+
+.projects__tags__container {
+  margin: 50px auto;
+  width: fit-content;
+}
+
+.projects__tags__container span {
+  margin: 0 10px;
+}
+
+.projects__bg {
+  min-height: 275px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.tech__container {
+  height: 100vh;
+  position: relative;
+}
+
+.tech__container h3 {
+  position: relative;
+  margin: 7% auto 0 auto;
+  width: fit-content;
+}
+
+.tech__container h3::after {
+  content: url("../img/triangles.svg");
+  position: absolute;
+  top: -60px;
+  right: -60%;
+}
+
+.tech__img__container {
+  margin-top: 12%;
+}
+
+.tech__img__container img {
+  max-height: 150px;
+  filter: drop-shadow(0 0 10px rgba(2, 18, 41, 0.3));
+}
+
+.contact__container {
+  height: 100vh;
+  position: relative;
+}
+
+.contact__main__container {
+  margin-top: 8%;
+}
+
+.contact__form__container form {
+  margin: 0 auto;
+}
