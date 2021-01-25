@@ -1,7 +1,8 @@
 import { reactive } from 'vue';
 
 const store = reactive({
-  lang: 'fr'
+  lang: 'fr',
+  scrollTop: true,
 })
 
 export default store;

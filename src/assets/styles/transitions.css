@@ -1,0 +1,19 @@
+.fade-enter-from ,
+.fade-leave-to {
+  opacity: 0;
+  /* transform: translate3d(-10px,0,0); */
+}
+
+.fade-enter-active{
+  transition:all .8s ease-in-out;
+}
+
+
+.slide-enter-active,
+.slide-leave-active {
+  /* transition: 1s cubic-bezier(1,-0.01,.55,1.05); */
+  transition: all 1s cubic-bezier(0.76, 0, 0.45, 1.15);
+}
+.slide-enter, .slide-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  transform: translateX(-100%);
+}

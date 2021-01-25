@@ -76,7 +76,7 @@
           </form>
         </div>
         <div
-          class="flex flex-col items-center justify-center flex-grow text-34 contact__email__container"
+          class="flex flex-col items-center justify-center flex-grow text-34 contact__email__container text-light"
         >
           <p>Sinon, directement par e-mail :</p>
           <span class="text-orange">nicdx.dev@gmail.com</span>
@@ -87,7 +87,6 @@
 </template>
 
 <script>
-import { MDCTextField } from "@material/textfield";
 import axios from "axios";
 import { ref } from "vue";
 
@@ -189,17 +188,19 @@ export default {
   border-radius: 5px;
   padding-left: 10px;
   width: 100%;
+  transition: all .3s ease-out;
 }
 
-.input-group .input-area:valid + .label {
-  top: -8px;
+/* .input-group .input-area:valid + .label {
+  top: -15px;
   padding: 0 3px;
   font-size: 14px;
   color: #8d8d8d;
-}
+} */
 
 .input-group .input-area:focus {
   border: 2px solid #7b61ff;
+  transform: scale(1.04,1.04);
 }
 
 .input-group .label {
@@ -208,11 +209,11 @@ export default {
   top: 14px;
   left: 10px;
   background: #fdfdfd;
-  transition: 200ms;
+  transition: 300ms ease-in-out;
 }
 
 .input-group .input-area:focus + .label {
-  top: -8px;
+  top: -11px;
   padding: 0 3px;
   font-size: 14px;
   color: #7b61ff;

@@ -3,7 +3,7 @@ node_modules
 /dist
 
 
-.todo
+*.todo
 
 
 # local env files

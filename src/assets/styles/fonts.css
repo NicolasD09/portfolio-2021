@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Sf Pro Regular";
+  src: url('../fonts/SF-Pro-Display-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Sf Pro Light";
+  src: url('../fonts/SF-Pro-Display-Light.otf') format('opentype');
+  font-weight: 300;
+}
+
+.text-light{
+  font-family: "Sf Pro Light", Arial, Helvetica, sans-serif;
+}
+
 .text-16{
   font-size: 16px;
 }
@@ -20,5 +35,9 @@
 
 .text-50 {
   font-size: 50px;
+}
+
+.text-67{
+  font-size: 67px;
 }
 

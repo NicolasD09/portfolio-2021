@@ -1,12 +1,14 @@
 <template>
-  <transition-group name="fade">
-    <span :key="1">
-      <slot name="fr" v-if="store.lang === 'fr'" ></slot>
-    </span>
-    <span :key="2">
-      <slot name="en" v-if="store.lang === 'en'" ></slot>
-    </span>
-  </transition-group>
+  <transition name="fade">
+    <div v-if="store.lang === 'fr'">
+      <slot key="1" name="fr"></slot>
+    </div>
+  </transition>
+  <transition name="fade">
+    <div v-if="store.lang !== 'fr'">
+      <slot key="2" name="en"></slot>
+    </div>
+  </transition>
 </template>
 
 <script>
