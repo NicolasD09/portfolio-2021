@@ -72,7 +72,7 @@
               />
               <label for="phone" class="label">Phone</label>
             </div>
-            <Button @click="submitForm" class="self-start">Envoyer</Button>
+            <Button class="self-start">Envoyer</Button>
           </form>
         </div>
         <div
