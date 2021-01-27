@@ -6,15 +6,17 @@
         <translation>
           <template v-slot:fr>
             <h1 class="text-90 text-heavy hero__title hero__anim">
-              Du logo au site internet, je développe des images numériques
+              Du logo au site internet,<br />
+              je développe des images<br />
+              numériques
               <span class="text-orange">modernes</span>.
             </h1>
           </template>
           <template v-slot:en>
             <h1 class="text-90 text-heavy hero__title hero__anim">
-              From logos to website, I design
+              From logos to websites,<br />I design
               <span class="text-orange"> modern </span>
-              digital brand identities.
+              digital<br />brand identities.
             </h1>
           </template>
         </translation>

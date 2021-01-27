@@ -230,7 +230,7 @@ li {
 .hero__title {
   margin-top: 9%;
   width: fit-content;
-  max-width: 78%;
+  /* max-width: 78%; */
 }
 
 .hero__chevron__icon {
