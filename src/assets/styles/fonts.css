@@ -8,9 +8,17 @@
   src: url('../fonts/SF-Pro-Display-Light.otf') format('opentype');
   font-weight: 300;
 }
+@font-face {
+  font-family: "Sf Pro Heavy";
+  src: url('../fonts/SF-Pro-Display-Heavy.otf') format('opentype');
+  /* font-weight: 300; */
+}
 
 .text-light{
   font-family: "Sf Pro Light", Arial, Helvetica, sans-serif;
+}
+.text-heavy{
+  font-family: "Sf Pro Heavy", Arial, Helvetica, sans-serif;
 }
 
 .text-16{
@@ -39,5 +47,9 @@
 
 .text-67{
   font-size: 67px;
+}
+
+.text-90{
+  font-size: 90px;
 }
 

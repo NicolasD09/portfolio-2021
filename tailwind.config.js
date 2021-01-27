@@ -21,6 +21,7 @@ module.exports = {
       fontFamily: {
         regular: ["Sf Pro Regular", "Arial"],
         light: ["Sf Pro Light", "Arial"],
+        heavy: ["Sf Pro Heavy", "Arial"],
       },
     },
   },

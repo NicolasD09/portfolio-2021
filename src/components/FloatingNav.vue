@@ -5,7 +5,7 @@
         id="home__icon"
         class="floating-nav__list__item"
         @click="
-          scroll(`.hero__container`, 500);
+          scroll(`.hero__container`, 1100);
           setActive(link, $event);
         "
       >
@@ -15,7 +15,7 @@
         id="projects__icon"
         class="floating-nav__list__item"
         @click="
-          scroll(`#Mes-projets`, 500);
+          scroll(`#Mes-projets`, 1100);
           setActive(link, $event);
         "
       >
@@ -25,7 +25,7 @@
         id="tech__icon"
         class="floating-nav__list__item"
         @click="
-          scroll(`#Technologies`, 500);
+          scroll(`#Technologies`, 1100);
           setActive(link, $event);
         "
       >
@@ -35,7 +35,7 @@
         id="contact__icon"
         class="floating-nav__list__item"
         @click="
-          scroll(`#Me-contacter`, 500);
+          scroll(`#Me-contacter`, 1100);
           setActive(link, $event);
         "
       >

@@ -1,11 +1,12 @@
 import VueScrollTo from "vue-scrollto";
 const options = {
   container: "body",
-  duration: 500,
-  easing: [0.4,0.96,0.63,0.9],
+  // easing: [0.49,-0.07,0.79,1.01],
+  // easing: [0.23,0.02,0.48,1],
+  easing: "ease-in-out",
   offset: 0,
   force: true,
-  cancelable: true,
+  cancelable: false,
   onStart: false,
   onDone: false,
   onCancel: false,
@@ -13,7 +14,7 @@ const options = {
   y: true,
 };
 
-const scroll = (el, dur) => {
+const scroll = (el, dur = 1200) => {
   VueScrollTo.scrollTo(el, dur, options);
 };
 
